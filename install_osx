@@ -21,18 +21,21 @@ else
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
+brew install neovim
+
 brew install \
   bash bash-completion bash-git-prompt \
-  git \
+  git git-delta \
   curl htop openssl \
   ctags \
   ripgrep fd exa fzf jq \
-  rbenv node \
+  node \
+  rbenv fnm \
   kubectl k9s stern \
   antibody \
-  cask
-
-brew install nvim
+  cask \
+  ansible \
+  postgresql
 
 # cool developer fonts
 brew tap homebrew/cask-fonts
