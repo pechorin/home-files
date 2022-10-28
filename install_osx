@@ -4,7 +4,7 @@ function echo_ok() { echo -e '\033[1;32m'"$1"'\033[0m'; }
 function echo_warn() { echo -e '\033[1;33m'"$1"'\033[0m'; }
 function echo_error() { echo -e '\033[1;31mERROR: '"$1"'\033[0m'; }
 
-# Install all software required for modern development (kind of)
+# Install all packages required for modern development (kind of)
 
 dotfiles_dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
@@ -21,9 +21,6 @@ else
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-# TODO: это откуда-куда?
-git config --global pull.rebase true
-
 brew install \
   bash bash-completion bash-git-prompt \
   git \
@@ -35,7 +32,7 @@ brew install \
   antibody \
   cask
 
-brew install nvim --HEAD
+brew install nvim
 
 # cool developer fonts
 brew tap homebrew/cask-fonts
