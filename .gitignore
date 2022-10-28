@@ -1,0 +1,8 @@
+.vim/bundle/*
+.vim/autoload/*
+.vim/sessions/*
+
+secrets/*
+
+.DS_Store
+tags

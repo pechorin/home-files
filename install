@@ -1,0 +1,32 @@
+#!/usr/local/bin/bash
+
+set -e
+set -o pipefail
+
+function echo_ok() { echo -e '\033[1;32m'"$1"'\033[0m'; }
+function echo_warn() { echo -e '\033[1;33m'"$1"'\033[0m'; }
+function echo_error() { echo -e '\033[1;31mERROR: '"$1"'\033[0m'; }
+
+# Install env files
+dotfiles_dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+dotfiles=(
+  ".zshenv"
+  ".zsh_plugins.txt"
+)
+
+echo_warn "Creating symlinks"
+
+for item in ${dotfiles[*]}
+do
+  target="$dotfiles_dir/$item"
+
+  if [ -e $target ]
+  then
+      echo_warn "Symlinking: $home/${item} -> $target"
+      new_link="${HOME}/${item}"
+
+      rm -rf $new_link
+      ln -s $target $new_link || { echo_error "Link creation failed" && exit 1; }
+      echo_ok "OK"
+  fi
+done
