@@ -60,6 +60,9 @@ FONTS=(
 
 brew install --cask "${FONTS[@]}"
 
+# OSX apps
+brew install iterm2 vimr
+
 brew cleanup
 
 echo_ok "Fonts installed"
