@@ -31,6 +31,7 @@ brew install \
   ripgrep fd exa fzf jq \
   node \
   rbenv fnm \
+  go gopls \
   kubectl k9s stern \
   antibody \
   cask \
