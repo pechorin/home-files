@@ -41,6 +41,9 @@ brew install \
   postgresql \
   lua lua-language-server
 
+# Important node packages
+npm install -g vim-language-server
+
 # cool developer fonts
 brew tap homebrew/cask-fonts
 
