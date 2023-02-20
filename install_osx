@@ -26,17 +26,20 @@ brew install neovim
 brew install \
   bash bash-completion bash-git-prompt \
   git git-delta \
-  curl htop openssl \
-  ctags \
+  curl openssl \
   ripgrep fd exa fzf jq \
+  htop \
+  ctags \
   node \
-  rbenv fnm \
+  rbenv \
+  fnm \
   go gopls \
   kubectl k9s stern \
   antibody \
   cask \
   ansible \
-  postgresql
+  postgresql \
+  lua lua-language-server
 
 # cool developer fonts
 brew tap homebrew/cask-fonts
