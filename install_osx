@@ -27,7 +27,11 @@ brew install \
   htop \
   cask \
   ansible \
-  postgresql@15
+  code-minimap \
+
+# Databases
+brew install postgresql@15 libpq \
+  redis
 
 # Neovim
 brew install lua lua-language-server
@@ -76,12 +80,13 @@ brew install --cask \
   yandex-disk \
   keepassxc \
   firefox \
-  yandex-browser \
   slack \
   telegram-desktop \
   syncthing \
   vlc \
-  shadowsocksx-ng
+  shadowsocksx-ng \
+  alacritty \
+  podman-desktop
 
 brew cleanup
 
