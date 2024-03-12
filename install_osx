@@ -28,7 +28,8 @@ brew install \
   cask \
   ansible \
   code-minimap \
-  shared-mime-info
+  shared-mime-info \
+  antidote
 
 # Databases
 brew install postgresql@15 libpq \

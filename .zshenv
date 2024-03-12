@@ -1,6 +1,5 @@
-# zsh cache dir
-mkdir -p ~/tmp/zsh/
-export ZSH_CACHE_DIR="$HOME/tmp/zsh/"
+mkdir -p ~/.tmp/zsh/
+export ZSH_CACHE_DIR="$HOME/.tmp/zsh/"
 
 export HOST="localhost"
 export EDITOR=nvim
