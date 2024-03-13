@@ -6,8 +6,9 @@ compinit
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
 
-# Yc autocompletion
-if [ -f '/Users/vorobey/yandex-cloud/completion.zsh.inc' ]; then source '/Users/vorobey/yandex-cloud/completion.zsh.inc'; fi
+# Yandex cloud autocompletion
+if [ -f "/Users/$USER/yandex-cloud/path.bash.inc" ]; then source "/Users/$USER/yandex-cloud/path.bash.inc"; fi
+if [ -f "/Users/$USER/yandex-cloud/completion.zsh.inc" ]; then source "/Users/$USER/yandex-cloud/completion.zsh.inc"; fi
 
 # Aliases
 alias be=bundle exec
