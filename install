@@ -10,7 +10,7 @@ function echo_error() { echo -e '\033[1;31mERROR: '"$1"'\033[0m'; }
 # Install env files
 dotfiles_dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 dotfiles=(
-  ".zshenv"
+  ".zprofile"
   ".zshrc"
   ".zsh_plugins.txt"
 )
