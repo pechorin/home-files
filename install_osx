@@ -89,7 +89,8 @@ brew install --cask \
   shadowsocksx-ng \
   alacritty \
   podman-desktop \
-  openconnect-gui
+  anybar \
+  openconnect
 
 brew cleanup
 

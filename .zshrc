@@ -11,4 +11,4 @@ if [ -f "/Users/$USER/yandex-cloud/path.bash.inc" ]; then source "/Users/$USER/y
 if [ -f "/Users/$USER/yandex-cloud/completion.zsh.inc" ]; then source "/Users/$USER/yandex-cloud/completion.zsh.inc"; fi
 
 # Aliases
-alias be=bundle exec
+alias be="bundle exec"
