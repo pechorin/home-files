@@ -12,3 +12,8 @@ if [ -f "/Users/$USER/yandex-cloud/completion.zsh.inc" ]; then source "/Users/$U
 
 # Aliases
 alias be="bundle exec"
+alias g="git"
+alias gc="git checkout"
+alias kc="kubectl"
+alias ctx="kubectx"
+alias ns="kubens"

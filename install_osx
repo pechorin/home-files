@@ -90,7 +90,8 @@ brew install --cask \
   alacritty \
   podman-desktop \
   anybar \
-  openconnect
+  openconnect \
+  s3cmd
 
 brew cleanup
 
